@@ -1,10 +1,10 @@
 <script setup>
-const { list } = defineProps(["list"]);
+const { list } = defineProps(["list"])
 
-const selectedButton = defineModel({ default: [0] });
+const selectedButton = defineModel()
 
 function selectButton(what) {
-    selectedButton.value = what;
+    selectedButton.value = what
 }
 </script>
 
@@ -17,7 +17,7 @@ function selectButton(what) {
                 'bg-green-50 border-primary text-green-700 ':
                     selectedButton == el,
             }"
-            @click="selectButton(el)"
+            @click="() => selectButton(el)"
         >
             {{ el }}
         </button>

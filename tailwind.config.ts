@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 export default {
     content: [
@@ -18,8 +18,9 @@ export default {
                     400: "#FFCB00",
                 },
                 background: "#818181",
+                footer: "#F7F6F4",
             },
         },
     },
     plugins: [],
-} satisfies Config;
+} satisfies Config

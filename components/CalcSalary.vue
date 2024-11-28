@@ -1,15 +1,14 @@
 <script setup>
-const styleClick = "";
-const salaryValue = ref(0);
-const { setSalaryValue, setTimeValue, setYearValue } = useCalculationState();
-const selectButtonTime = ref("");
-const selectedButtonYear = ref("");
+const salaryValue = ref(0)
+const { setSalaryValue, setTimeValue, setYearValue } = useCalculationState()
+const selectButtonTime = ref("Ежемесячно")
+const selectedButtonYear = ref("2 года")
 
 watch([salaryValue, selectButtonTime, selectedButtonYear], () => {
-    setSalaryValue(salaryValue.value);
-    setTimeValue(selectButtonTime.value);
-    setYearValue(selectedButtonYear.value);
-});
+    setSalaryValue(salaryValue.value)
+    setTimeValue(selectButtonTime.value)
+    setYearValue(selectedButtonYear.value)
+})
 </script>
 
 <template>

@@ -1,7 +1,6 @@
 <script setup>
 const { calculate } = useCalculationState();
 const result = calculate();
-console.log(result);
 </script>
 <template>
     <div class="bg-stone-100 rounded-xl flex flex-col gap-5 py-5 px-10">
@@ -19,7 +18,7 @@ console.log(result);
             </p>
         </div>
         <div>
-            <span class="text-sm text-stone-600">Сумма в конче срока*</span>
+            <span class="text-sm text-stone-600">Сумма в конце срока*</span>
             <p class="text-2xl">
                 {{ new Intl.NumberFormat("ru-RU").format(result.profitMonth) }}
                 рублей
